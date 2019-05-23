@@ -11,6 +11,12 @@ import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Warmup;
 
+/*
+Benchmark                           Mode  Cnt        Score       Error  Units
+UUIDToBytesBenchmark.asBytes       thrpt   50  2011178,561 ± 53003,688  ops/s
+UUIDToBytesBenchmark.asUuidString  thrpt   50  3247594,074 ± 43608,785  ops/s
+ */
+
 @BenchmarkMode(Mode.Throughput)
 @OutputTimeUnit(TimeUnit.SECONDS)
 @Warmup(iterations = 5)
